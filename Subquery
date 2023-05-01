@@ -1,0 +1,63 @@
+-- Sub Query:===>
+
+--Example:===>
+
+1) Scalar Sub Query:===> -- It always returns 1 row and 1 column
+
+
+select   -- Outer Query or Main Query
+from employee
+where salary > (select avg(salary) from employee);  -- Sub Query / Inner Query  (Not Hard coded here)
+
+--------------------------------------------------------
+
+
+2) Multiple Row Subquery:===>
+
+===> 2 Types of Sub Query:=> 
+==> Subquery which return Multiple Column and Multiple Row
+==> Subquery which return only 1 column and Multiple Rows
+
+
+---------------------------------------------------------
+
+3) Correlated Subquery:===>
+
+This Subquery is depandent on Outer Query.
+
+
+--------------------------------------------------------
+
+4) Nested Subquery:===>
+
+-------------------------------------------------------
+
+===> 4 Clause you can use in Subquery:==>
+
+=> select
+=> from
+=> where
+=> having
+
+--------------------------------------------------------
+
+==> SQL Queries which allowed in Subquery:===>
+
+=> Insert
+=> Update
+=> Delete
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
